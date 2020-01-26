@@ -9251,10 +9251,10 @@ function updateConfig(chart) {
 		core_layouts.removeBox(chart, scale);
 	});
 
-	newOptions = mergeConfig(
-		core_defaults.global,
-		core_defaults[chart.config.type],
-		newOptions);
+	// newOptions = mergeConfig(
+	// 	defaults.global,
+	// 	defaults[chart.config.type],
+	// 	newOptions);
 
 	chart.options = chart.config.options = newOptions;
 	chart.ensureScalesHaveIDs();
